@@ -15,6 +15,6 @@ export const Clickable = styled.button<ClickableStyles>`
   color: ${(p) => (p.$clicked ? DARK_GREY : '#ffffff')};
 
   @media (max-width: 600px) {
-    font-size: 12px;
+    font-size: 10px;
   }
 `;
