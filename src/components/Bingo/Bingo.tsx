@@ -87,7 +87,7 @@ const Main: React.FC = () => {
           </ClickableSquare>
         ))}
 
-        <ClickableSquare index={0} clicked={true} onClick={squareClicked}>
+        <ClickableSquare index={12} clicked={true} onClick={squareClicked}>
           Chris is out of mana (FREE SPACE)
         </ClickableSquare>
 
