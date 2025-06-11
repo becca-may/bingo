@@ -13,4 +13,8 @@ export const Clickable = styled.button<ClickableStyles>`
   font-family: Arial, Helvetica, sans-serif;
   background-color: ${(p) => (p.$clicked ? BRIGHT_GREEN : DARK_GREY)};
   color: ${(p) => (p.$clicked ? DARK_GREY : '#ffffff')};
+
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
 `;
