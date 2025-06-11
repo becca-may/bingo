@@ -53,29 +53,20 @@ const Main: React.FC = () => {
           drawShape={(ctx) => {
             ctx.beginPath();
             ctx.arc(150, 100, 25, 0, 2 * Math.PI, false);
-            //ctx.fillStyle = 'red';
             ctx.fill();
             ctx.lineWidth = 1;
-            //ctx.strokeStyle = 'red';
-            //ctx.stroke();
 
             ctx.beginPath();
             ctx.arc(200, 100, 25, 0, 2 * Math.PI, false);
-            //ctx.fillStyle = 'red';
             ctx.fill();
             ctx.lineWidth = 1;
-            //ctx.strokeStyle = 'red';
-            //ctx.stroke();
 
             ctx.beginPath();
             ctx.scale(1, 2);
             ctx.arc(175, 26, 25, 0, 2 * Math.PI, false);
-            //ctx.restore();
-            //ctx.fillStyle = 'red';
+
             ctx.fill();
             ctx.lineWidth = 1;
-            //ctx.strokeStyle = 'red';
-            //ctx.stroke();
           }}
         />
       )}
