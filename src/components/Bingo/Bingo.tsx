@@ -18,6 +18,7 @@ const Main: React.FC = () => {
 
   const squareClicked = useCallback(
     (i: number) => {
+      if (i == 12) return;
       setClickedSquares(toggleSquareClicked(i, clickedSquares));
     },
     [clickedSquares],
