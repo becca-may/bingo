@@ -1,6 +1,7 @@
 export const squareText = [
   `Becca: "You fucked us!"`,
   'Becca has to tank',
+  `Becca yells at someone`,
   `"Becca's Brother"`,
   '*Beard scruffles*',
   '"Cake Bitch"',
@@ -38,6 +39,7 @@ export const squareText = [
   'Josh wins nothing',
   `"MEOWWW!!!"`,
   '"MILF barge"',
+  `"MUSTAAAAARRDD"`,
   '"Nipple twins"',
   '"Obama Lotion"',
   'Pink and Stink finish the fight',
@@ -51,6 +53,7 @@ export const squareText = [
   'Terri is wearing her sunglasses',
   'Terri: "All is well!"',
   'Thunder has to put his chickens to bed',
+  'Thunder leaves early',
   'Tommy shows up',
   '10 camgirls at once',
   'Tim goes AFK to change a diaper',
@@ -60,7 +63,10 @@ export const squareText = [
   `RG: "Crushin' my ass"`,
   'RG: "Union Break"',
   `RG: "Somethin' blue comin' out of my butthole"`,
+  `RG: "I am a GOONER?"`,
   `Ethan: "Who's grunting?"`,
+  `"Someone" gets lost`,
+  `"Weaponized Autism"`,
   'Zor wins the roll',
 ];
 
