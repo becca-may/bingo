@@ -26,7 +26,6 @@ export const squareText = [
   'Etho is drinking margaritas',
   `"Figure it out on the back end"`,
   '"First Try"',
-  'Galahfray asks to join (on her main)',
   '"Gay up the boss"',
   'Gulen spams the sound board',
   '"Heal me Chris!!"',
