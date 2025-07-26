@@ -1,9 +1,14 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import Bingo from "./components/Bingo";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import HvkBingo from './components/HvkBingo';
+import { BrowserRouter, Routes, Route } from 'react-router';
 
-createRoot(document.getElementById("root")!).render(
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Bingo />
-  </StrictMode>
+    <BrowserRouter basename="/bingo">
+      <Routes>
+        <Route path="/hvk" element={<HvkBingo />} />
+      </Routes>
+    </BrowserRouter>
+  </StrictMode>,
 );

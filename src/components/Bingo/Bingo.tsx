@@ -3,16 +3,17 @@ import { useWindowSize } from 'react-use';
 import Confetti from 'react-confetti';
 import { BingoWrapper, HeaderSquare, AppContainer } from './Bingo.styles';
 import ClickableSquare from '../ClickableSquare';
-import { getSquares } from '../../utils/squares';
 import { BINGO_PATTERNS } from '../../utils/constants';
 
-const Main: React.FC = () => {
-  const [squares, setSquares] = useState<string[]>([]);
+interface BingoProps {
+  squares: string[];
+}
+
+const Main: React.FC<BingoProps> = ({ squares }) => {
   const [clickedSquares, setClickedSquares] = useState<number[]>([12]);
   const { width, height } = useWindowSize();
 
   useEffect(() => {
-    setSquares(getSquares);
     setClickedSquares([12]);
   }, []);
 

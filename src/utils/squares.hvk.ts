@@ -1,4 +1,4 @@
-export const squareText = [
+export const hvk_squares = [
   `Becca: "You fucked us!"`,
   'Becca has to tank',
   `Becca yells at someone`,
@@ -71,25 +71,3 @@ export const squareText = [
   `"Weaponized Autism"`,
   'Zor wins the roll',
 ];
-
-export function getSquares() {
-  shuffle(squareText);
-  return squareText.slice(0, 25);
-}
-
-function shuffle(list: string[]) {
-  let currentIndex = list.length;
-
-  // While there remain elements to shuffle...
-  while (currentIndex != 0) {
-    // Pick a remaining element...
-    let randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
-
-    // And swap it with the current element.
-    [list[currentIndex], list[randomIndex]] = [
-      list[randomIndex],
-      list[currentIndex],
-    ];
-  }
-}
