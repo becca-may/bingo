@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import Bingo from '../Bingo';
-import hvk_squares from '../../utils/squares.hvk';
+import strata_squares from '../../utils/squares.strata';
 import { getSquares } from '../../utils/squares.util';
 
-const HvkBingo: React.FC = () => {
+const StrataBingo: React.FC = () => {
   const [squares, setSquares] = useState<string[]>([]);
 
   useEffect(() => {
-    setSquares(getSquares(hvk_squares));
+    setSquares(getSquares(strata_squares));
   }, []);
 
-  return <Bingo squares={squares} freeSpace="Chris is out of mana" />;
+  return <Bingo squares={squares} freeSpace="" />;
 };
 
-export default HvkBingo;
+export default StrataBingo;

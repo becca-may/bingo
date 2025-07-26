@@ -7,9 +7,10 @@ import { BINGO_PATTERNS } from '../../utils/constants';
 
 interface BingoProps {
   squares: string[];
+  freeSpace: string;
 }
 
-const Main: React.FC<BingoProps> = ({ squares }) => {
+const Main: React.FC<BingoProps> = ({ squares, freeSpace }) => {
   const [clickedSquares, setClickedSquares] = useState<number[]>([12]);
   const { width, height } = useWindowSize();
 
@@ -90,7 +91,7 @@ const Main: React.FC<BingoProps> = ({ squares }) => {
         ))}
 
         <ClickableSquare index={12} clicked={true} onClick={squareClicked}>
-          Chris is out of mana (FREE SPACE)
+          {freeSpace} (FREE SPACE)
         </ClickableSquare>
 
         {[13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24].map((x) => (

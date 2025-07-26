@@ -1,4 +1,4 @@
-export const hvk_squares = [
+const squares = [
   `Becca: "You fucked us!"`,
   'Becca has to tank',
   `Becca yells at someone`,
@@ -71,3 +71,5 @@ export const hvk_squares = [
   `"Weaponized Autism"`,
   'Zor wins the roll',
 ];
+
+export default squares;
