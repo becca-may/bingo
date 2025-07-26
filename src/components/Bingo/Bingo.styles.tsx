@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import { BRIGHT_GREEN, DARK_GREY } from '../../utils/constants';
 
 export const AppContainer = styled.div`
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 10px);
   width: 100%;
-  background-color: ${DARK_GREY};
+  background-color: ${({ theme }) => theme.colors.background};
   display: flex;
   justify-content: center;
   padding-top: 10px;
@@ -16,29 +15,33 @@ export const BingoWrapper = styled.div`
   height: 100%;
   position: relative;
   max-width: 1000px;
-  max-height: calc(100vh - 44px);
+  max-height: calc(100vh - 50px);
   margin-left: auto;
   margin-right: auto;
   display: grid;
+  padding: 5px;
   grid-template-columns:
     minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)
     minmax(0, 1fr);
   grid-template-rows:
     44px minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr)
     minmax(0, 1fr);
-  border: 2px solid ${BRIGHT_GREEN};
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  border: 2px solid ${({ theme }) => theme.colors.primary};
   border-radius: 4px;
-  background-color: ${DARK_GREY};
+  background-color: ${({ theme }) => theme.colors.background};
 `;
 
 export const HeaderSquare = styled.div`
   position: relative;
   width: 100%;
-  color: ${BRIGHT_GREEN};
-  background-color: ${DARK_GREY};
-  font-family: Arial, Helvetica, sans-serif;
+  color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.background};
+  font-family: ${({ theme }) => theme.font.family};
   font-size: 24px;
   font-weight: bold;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   justify-content: center;

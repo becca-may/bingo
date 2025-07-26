@@ -3,6 +3,7 @@ import { Clickable } from './ClickableSquare.styles';
 
 interface ClickableSquareProps {
   clicked: boolean;
+  clickable?: boolean;
   index: number;
   onClick: (index: number) => void;
   className?: string;
@@ -10,6 +11,7 @@ interface ClickableSquareProps {
 
 const ClickableSquare: React.FC<PropsWithChildren<ClickableSquareProps>> = ({
   clicked,
+  clickable = true,
   index,
   onClick,
   className,
@@ -20,7 +22,12 @@ const ClickableSquare: React.FC<PropsWithChildren<ClickableSquareProps>> = ({
   }, [index, onClick]);
 
   return (
-    <Clickable className={className} onClick={click} $clicked={clicked}>
+    <Clickable
+      className={className}
+      onClick={click}
+      $clicked={clicked}
+      $clickable={clickable}
+    >
       {children}
     </Clickable>
   );
