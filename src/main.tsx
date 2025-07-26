@@ -6,7 +6,7 @@ import { HashRouter, Routes, Route } from 'react-router';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <HashRouter basename="/bingo">
+    <HashRouter>
       <Routes>
         <Route path="/hvk" element={<HvkBingo />} />
         <Route path="/strata" element={<StrataBingo />} />
